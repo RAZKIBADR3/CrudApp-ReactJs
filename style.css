@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,tahoma,sans-serif;
+    text-transform: capitalize;
+}
+
+#root {
+    min-height:100vh;
+    background-color: #0D0C11;
+}
+
+#root .container-fluid{
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.inputs{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 50px;
+    background-color: #1C1D21;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 18px;
+}.inputs > div{
+    width: 48%;
+}
+
+.inputs:last-child{
+    width: 70%;
+    padding: 10px 40px;
+}
+
+.inputs .addP , .inputs .updateP{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    color: white;
+}.add , .update2{
+    cursor: pointer;
+    border: 1px solid white;
+    font-size: 17px;
+    padding: 10px 50px;
+    border-radius: 12px;
+    background-color: #198754;
+    transition: 0.3s transform;
+}.update2{
+    background-color: orange;
+}.add:hover , .update2:hover{
+    transform: scale(1.07);
+}.inputs h1{
+    color: white;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.products{
+    width: 85%;
+    margin: 5vh auto 0 auto;
+    padding: 15px;
+    background-color: #1C1D21;
+    border-radius: 10px;
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}.product{
+    margin:8px 0;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: #3635DB;
+}.product p{
+    width: 45%;
+    font-size: 17px;
+    text-align: center;
+}.product span , .update1{
+    cursor: pointer;
+    width: 24%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: red;
+    border-radius: 12px;
+    font-size: 18px;
+    transition: 0.3s transform;
+}.product .update1{
+    background-color: orange;
+}.product span:hover{
+    transform: scale(1.08);
+}
+
+.updateC{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
